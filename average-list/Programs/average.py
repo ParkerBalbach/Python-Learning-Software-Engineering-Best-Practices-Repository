@@ -35,3 +35,11 @@ sum = sum_loop(sumlst)
 print("Sum =", sum)
 
 
+new_lst = []
+
+new_lst = [int(item) for item in input("Enter the list items:").split()]
+
+print(new_lst)
+
+new_lst = sum_loop(new_lst)
+print(new_lst)
