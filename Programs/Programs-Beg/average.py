@@ -26,7 +26,7 @@ print("Average =",avg)
 def sum_loop(lst):
     sum_num = 0
     for num in lst:
-        sum_num = sum_num + num
+        sum_num += num
     return sum_num
 
 sumlst = [5,5,5,5,5,5]
