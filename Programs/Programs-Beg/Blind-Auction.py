@@ -1,3 +1,4 @@
+import os
 # What is your name:
 # What is your bid:
 # Other bidders?
@@ -12,7 +13,8 @@ def highest_bidder(bidding_record):
        if bid_amount > highest_bid:
            highest_bid = bid_amount
            winner = bidder
-    print(f"The winner is {winner} with a bid of ${highest_bid}")
+           formatted_bid = "{:.2f}".format(highest_bid)
+    print(f"The winner is {winner} with a bid of ${formatted_bid}")
 
 
 other_bidders = True
@@ -22,8 +24,15 @@ while other_bidders:
     bids[name] = bid
 
     result = input("If there are other bidders press 'y' otherwise press 'n'\n")
-    if result == 'n':
+    if result == 'y':
+        clear = lambda: os.system('cls')
+        clear()
+    elif result == 'n':
         other_bidders = False
         highest_bidder(bids)
+        
+
+
+# final_amount = "{:.2f}".format(bill_per_person)
 
  
