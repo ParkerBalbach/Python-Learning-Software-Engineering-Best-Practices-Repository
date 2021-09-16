@@ -12,12 +12,12 @@ print("Average =",average)
 def average_loop(lst):
     sum_num = 0
     for num in lst:
-        sum_num = sum_num + num
+        sum_num += num
     
     avg = sum_num / len(lst)
     return avg
 
-number = [18,25,3,41,5]
+number = [18,25,3,41,10]
 avg = average_loop(number)
 
 print("Average =",avg)
@@ -35,11 +35,11 @@ sum = sum_loop(sumlst)
 print("Sum =", sum)
 
 
-new_lst = []
+# new_lst = []
 
-new_lst = [int(item) for item in input("Enter the list items:").split()]
+# new_lst = [int(item) for item in input("Enter the list items:").split()]
 
-print(new_lst)
+# print(new_lst)
 
-new_lst = sum_loop(new_lst)
-print(new_lst)
+# new_lst = sum_loop(new_lst)
+# print(new_lst)
