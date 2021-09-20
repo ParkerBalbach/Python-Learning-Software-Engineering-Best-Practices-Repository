@@ -2,6 +2,14 @@
 def average_func(lst):
     return sum(lst) / len(lst)
 
+def length_func(lst):
+    count = 0
+    for i in lst:
+        count += 1
+    return count
+
+
+
 
 lst = [15, 9, 55, 41, 35, 20, 62, 49]
 average = average_func(lst)
@@ -14,7 +22,7 @@ def average_loop(lst):
     for num in lst:
         sum_num += num
     
-    avg = sum_num / len(lst)
+    avg = sum_num / length_func(lst)
     return avg
 
 number = [18,25,3,41,10]
