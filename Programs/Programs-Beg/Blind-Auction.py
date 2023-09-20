@@ -7,6 +7,8 @@ import os
 # Initialize an empty dictionary to store bids with bidder names as keys and bid amounts as values
 bids = {}
 
+conflict = 1
+
 """Determines the winner and highest bidder.
 
     Args: Dict that contains bidder names as keys and bid amounts as values
