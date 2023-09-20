@@ -3,6 +3,8 @@ import os
 # What is your bid:
 # Other bidders?
 
+# Merge Conflict
+
 
 bids = {}
 
